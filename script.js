@@ -22,17 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
     //Username validation
     if (username.length < 3) {
       isValid = false;
-      messages = [...messages, "Username most be at least 3 characters"];
+      messages.push("Username most be at least 3 characters");
     }
 
     if (!(email.includes("@") && email.includes("."))) {
       isValid = false;
-      messages = [...messages, "Invalid email address"];
+      messages.push("Invalid email address");
     }
 
     if (password.length < 8) {
       isValid = false;
-      messages = [...messages, "Password must be at least 8 characters"];
+      messages.push("Password must be at least 8 characters");
     }
 
     //Feedback
