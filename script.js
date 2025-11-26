@@ -1,5 +1,5 @@
 //Ensure all elements is loaded
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   //Get the form element
   const form = document.getElementById("registration-form");
 
